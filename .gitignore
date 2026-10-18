@@ -1,0 +1,21 @@
+node_modules/
+.next/
+.next-test/
+.turbo/
+coverage/
+.env*
+!.env.example
+.local/
+VM_Inventory_Development_Spec.md
+test-results/
+playwright-report/
+*.tsbuildinfo
+*.log
+.DS_Store
+.idea/
+.vscode/
+# Local engineering records and historical draft specifications.
+tasks.jsonl
+docs/spec.md
+docs/ui-auth-spec.md
+AGENTS.md

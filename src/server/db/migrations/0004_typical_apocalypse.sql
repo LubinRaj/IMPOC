@@ -1,0 +1,3 @@
+ALTER TABLE "sync_jobs" ADD CONSTRAINT "sync_job_trigger_valid" CHECK ("sync_jobs"."trigger" in ('source_change','event','poll'));--> statement-breakpoint
+ALTER TABLE "sync_jobs" ADD CONSTRAINT "sync_job_status_valid" CHECK ("sync_jobs"."status" in ('pending','running','completed','dead'));--> statement-breakpoint
+ALTER TABLE "sync_jobs" ADD CONSTRAINT "sync_job_attempts_nonnegative" CHECK ("sync_jobs"."attempts">=0);
